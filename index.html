@@ -7,7 +7,7 @@
 </head>
 <body>
   <div id="root">
-    <div>
+    <div id="sidebar">
       <ul>
         <li><a href="#home">김우진</a></li>
         <li><a href="#hyun">김현</a></li>
@@ -39,7 +39,8 @@
         document.getElementById('content').innerHTML = '<h1>김우진</h1>';
         break;
       case 'hyun':
-        document.getElementById('content').innerHTML = '<h1>김현</h1>';
+        document.getElementById('content').innerHTML = 
+        '<h1>김현 소개</h1><div><p>        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium enim placeat fugit mollitia error totam voluptatibus, corrupti tempore? Illo libero, eveniet dolorum nihil nemo incidunt aut ea maxime necessitatibus odio.</p></div>';
         break;
       case 'seunghee':
         document.getElementById('content').innerHTML = '<h1>방승희</h1>';
