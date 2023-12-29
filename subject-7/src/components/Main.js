@@ -1,10 +1,12 @@
-import React, {useState} from "react";
-import Sidebar from "./Sidebar";
+import React from "react";
 
-const Main = () =>{
+const Main = () => {
   return (
-    <div>
-      <Sidebar />
+    <div id="main">
+      <form id="form">
+        <input type="text" name="test" id="text"placeholder="Write your name">
+        <input type="submit" value="Show">
+      </form>
     </div>
   );
 }
