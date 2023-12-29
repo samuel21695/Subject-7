@@ -55,6 +55,10 @@
 
   // 각 링크 클릭 시 페이지 이동
   document.querySelectorAll('ul a').forEach(link => {
+    link.addEventListener('click', (event) => {
+      const page = event.currentTarget.getAttribute('href').substring(1); // # 제거
+      navigatePage(page);
+    });
   });  
   </script>
 </body>
