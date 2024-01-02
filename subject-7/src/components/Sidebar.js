@@ -24,6 +24,9 @@ const Sidebar = () => {
   );
 };
 
+// 초기 페이지 로딩 시 홈 페이지 표시
+navigatePage('home');
+
 function navigatePage(page) {
   switch (page) {
     case 'home':
