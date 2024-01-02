@@ -50,6 +50,19 @@ function navigatePage(page) {
   }
 }
 
+  // 초기 페이지 로딩 시 홈 페이지 표시
+  navigatePage('home');
+
+  // 각 링크 클릭 시 페이지 이동
+  const aTags = document.querySelectorAll('ul a')
+  aTags.forEach(link => {
+    link.addEventListener('click', () => {
+      const page = link.getAttribute('href').substring(1); // # 제거
+      navigatePage(page);
+    });
+  });  
+
+
 const Sidebar = () => {
   return (
     <div id="sidebar">
