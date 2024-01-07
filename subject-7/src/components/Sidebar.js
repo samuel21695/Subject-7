@@ -35,9 +35,6 @@ const Sidebar = () => {
     navigatePage(inputValue);
   };
 
-  useEffect(() => {
-    navigatePage(inputValue);
-  }, [inputValue]);
 
 
   return (
@@ -85,8 +82,8 @@ const Sidebar = () => {
         {page === 'hong' && <StudentSeventeen />}
         {/* 나머지 페이지들도 위와 같이 추가해주세요. */}
         </div>
-        <form id="form">
-          <input type="text" name="text" id="text" placeholder="Write your name"></input>
+        <form id="form" onSubmit={handleSubmit}>
+          <input type="text" name="text" id="text" placeholder="Write your name" value={inputValue} onChange={handleInputChange}></input>
           <input type="submit" value="Show"></input>
         </form>
       </div>
