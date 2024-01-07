@@ -26,7 +26,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div>
+    <div id="page">
       <div id="sidebar">
       <ul>
         <li><a onClick={() => navigatePage('woo')}>김우진</a></li>
