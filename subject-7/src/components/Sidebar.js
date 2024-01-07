@@ -22,6 +22,27 @@ const Sidebar = () => {
   const [page, setPage] = useState('home');
   const [inputValue, setInputValue] = useState('');
 
+  const pageMap = {
+    '김우진': 'woo',
+    '김현': 'hyun',
+    '방승희': 'bang',
+    '변호녕': 'ho',
+    '소사무엘': 'so',
+    '송영준': 'song',
+    '신동현': 'shin',
+    '오승민': 'oh',
+    '유승민': 'yu',
+    '윤준현': 'yoon',
+    '이민구': 'ming',
+    '이유안': 'yuan',
+    '이채이': 'chae',
+    '정영식': 'jung',
+    '최성민': 'sung',
+    '최은철': 'eun',
+    '홍문기': 'hong',
+    // 나머지 매핑도 이와 같이 추가해주세요.
+  };
+
   const navigatePage = (page) => {
     setPage(page);
   };
@@ -32,7 +53,9 @@ const Sidebar = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    navigatePage(inputValue);
+    if (pageMap[inputValue])  {
+      navigatePage(pageMap[inputValue]);
+    }
   };
 
 
