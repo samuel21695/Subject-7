@@ -25,6 +25,11 @@ const Sidebar = () => {
     setPage(page);
   };
 
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+
   return (
     <div id="page">
       <div id="sidebar">
@@ -71,7 +76,7 @@ const Sidebar = () => {
         {/* 나머지 페이지들도 위와 같이 추가해주세요. */}
         </div>
         <form id="form">
-          <input type="text" name="test" id="text" placeholder="Write your name"></input>
+          <input type="text" name="text" id="text" placeholder="Write your name"></input>
           <input type="submit" value="Show"></input>
         </form>
       </div>
