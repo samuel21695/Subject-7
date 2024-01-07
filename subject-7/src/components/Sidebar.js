@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import StudentOne from './pages/Student1';
 import StudentTwo from './pages/Student2';
 import StudentThree from './pages/Student3';
@@ -35,7 +35,11 @@ const Sidebar = () => {
     navigatePage(inputValue);
   };
 
-  
+  useEffect(() => {
+    navigatePage(inputValue);
+  }, [inputValue]);
+
+
   return (
     <div id="page">
       <div id="sidebar">
