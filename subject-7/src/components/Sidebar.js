@@ -20,6 +20,7 @@ import StudentSeventeen from './pages/Student17';
 
 const Sidebar = () => {
   const [page, setPage] = useState('home');
+  const [inputValue, setInputValue] = useState('');
 
   const navigatePage = (page) => {
     setPage(page);
@@ -29,7 +30,12 @@ const Sidebar = () => {
     setInputValue(event.target.value);
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    navigatePage(inputValue);
+  };
 
+  
   return (
     <div id="page">
       <div id="sidebar">
