@@ -27,6 +27,7 @@ const Sidebar = () => {
 
   return (
     <div>
+      <div id="sidebar">
       <ul>
         <li><a onClick={() => navigatePage('woo')}>김우진</a></li>
         <li><a onClick={() => navigatePage('hyun')}>김현</a></li>
@@ -47,7 +48,9 @@ const Sidebar = () => {
         <li><a onClick={() => navigatePage('hong')}>홍문기</a></li>
         {/* 나머지 링크들도 위와 같이 추가해주세요. */}
       </ul>
-      <div id="content">
+      </div>
+      <div id="main">
+        <div id="contents">
         {page === 'woo' && <StudentOne />}
         {page === 'hyun' && <StudentTwo />}
         {page === 'bang' && <StudentThree />}
@@ -65,8 +68,12 @@ const Sidebar = () => {
         {page === 'sung' && <StudentFifteen />}
         {page === 'eun' && <StudentSixteen />}
         {page === 'hong' && <StudentSeventeen />}
-
         {/* 나머지 페이지들도 위와 같이 추가해주세요. */}
+        </div>
+        <form id="form">
+          <input type="text" name="test" id="text" placeholder="Write your name"></input>
+          <input type="submit" value="Show"></input>
+        </form>
       </div>
     </div>
   );
