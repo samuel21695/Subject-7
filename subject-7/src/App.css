@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App{
+  display: flex;
+}
+
+#sidebar{
+  width:10vw;
+  height: 70vh;
+}
+
+#sidebar > ul {
+  list-style: none;
+  line-height: 2em;
+}
+
+#sidebar > ul > li > a {
+  text-decoration: none;
+  color: #919191
+}
+#main{
+  width: 40vw;
+  height: 70vh;
+}
+
