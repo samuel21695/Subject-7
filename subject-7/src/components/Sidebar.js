@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Home from './pages/Home';
-import Hyun from './pages/Hyun';
+import Home from './pages/Student1';
+import Hyun from './pages/Student2';
 
 
 const Sidebar = () => {

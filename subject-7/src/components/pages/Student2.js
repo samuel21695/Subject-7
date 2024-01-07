@@ -1,7 +1,7 @@
 import React from 'react';
 
 // 페이지 컴포넌트들
-const Hyun = () => (
+const StudentTwo = () => (
   <div>
     <div className="introduce">
       <h1>김현 소개</h1>
@@ -14,4 +14,4 @@ const Hyun = () => (
   </div>
 );
 
-export default Hyun
+export default StudentTwo
